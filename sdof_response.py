@@ -27,12 +27,12 @@ def sdof_response(fs, k, zita, fn, Lsdof):
     sdof_resp_time = np.concatenate(([0], np.diff(xd) * fs))  # acceleration
 
     #Test Plot
-    """
+    
     plt.plot(t, xt)
     plt.xlabel('X Value')
     plt.ylabel('Y Value')
     plt.title('SDOF')
     plt.show()
-    """
+    
 
     return sdof_resp_time
